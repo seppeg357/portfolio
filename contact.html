@@ -13,8 +13,8 @@
     </script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg" style="background-color: #d8eff0;">
     <div class="container-fluid">
@@ -37,24 +37,28 @@
   <main class="flex-grow-1">
     <div class="container text-start my-5">
       <h1 class="display-3 fw-bold">Contact</h1>
-
-      <p class="mt-3">
-        Bij vragen over mijn projecten of andere loopbaankwesties kan u mij gerust contacteren via onderstaande media:
-      </p>
-      <p class="mt-3">
-        Via mail: placeholder@gmail.com
-      </p>
-      <p class="mt-3">
-        Telefonisch op +32 4XX XX XX XX
-      </p>
-      <p class="mt-3">
-        of op onderstaande sociale media
-      </p>
-      <div class="contact-icons mt-4">
-        <a href="#" class="bi bi-linkedin fs-3 me-3 blauw" title="LinkedIn"></a>
-        <a href="#" class="bi bi-instagram fs-3 blauw" title="Instagram"></a>
-      </div>
-    </div>
+<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" class="form-control" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
   </main>
 <footer class="mt-auto w-100 py-3 text-center" style="background-color: #d8eff0; color: #2596be;">
     <p class="mb-0">Gemaakt door Seppe Geldmeyer</p>
