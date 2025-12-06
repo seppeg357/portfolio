@@ -1,0 +1,44 @@
+html, body {
+  color: #2596be;
+}
+
+.navbar {
+    background-color: #d8eff0 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #2596be !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #43657e
+}
+
+h1, h5, p, a, li {
+  color: #2596be;
+}
+
+h1.display-1,
+h1.display-3 {
+  color: #2596be;
+}
+
+
+img.img-fluid {
+  border: 3px solid #43657e;
+}
+
+.carousel-fixed {
+    height: 600px;
+}
+
+.carousel-fixed img {
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #d8eff0;
+}
