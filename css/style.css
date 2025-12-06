@@ -1,53 +1,18 @@
 html, body {
-  box-sizing: border-box;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
   color: #2596be;
-  height: 100%;
-  width: 100%;
-}
-
-a, a:hover {
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #43657e;
-}
-
-.blauw {
-  color: #2596be;
-}
-
-.donkerblauw {
-  color: #43657e;
-}
-
-.wit {
-  color: #ffffff;
 }
 
 .navbar {
-  background-color: #d8eff0 !important;
-}
-
-.navbar-brand img {
-  border-radius: 50%;
+    background-color: #d8eff0 !important;
 }
 
 .navbar-nav .nav-link {
   color: #2596be !important;
-  margin: 0 10px;
-  font-weight: 500;
-  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #43657e !important;
+  color: #43657e
 }
 
 h1, h5, p, a, li {
@@ -59,50 +24,21 @@ h1.display-3 {
   color: #2596be;
 }
 
-p {
-  max-width: 700px;
-  margin-left: 0;
-  font-size: 1.05rem;
-}
 
 img.img-fluid {
   border: 3px solid #43657e;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img.img-fluid:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+.carousel-fixed {
+    height: 600px;
 }
 
-h5 {
-  color: #2596be;
-  margin-top: 10px;
-}
-
-.contact-icons a {
-  color: #2596be;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.contact-icons a:hover {
-  transform: scale(1.1);
-  color: #43657e;
+.carousel-fixed img {
+    height: 100%;
+    object-fit: cover;
 }
 
 footer {
-  background-color: #d8eff0;
-  text-align: center;
   padding: 1rem;
-  color: #2596be;
-}
-
-@media (max-width: 768px) {
-  h1.display-1,
-  h1.display-3 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1rem;
-  }
+  background-color: #d8eff0;
 }
